@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400&display=swap');
 
 * {
@@ -5,9 +6,7 @@
   text-decoration: none;
   color: #000000;
   box-sizing: border-box;
-}
-html {
-  font-size: 13px;
+  margin:0;
 }
 body {
   margin: 0;
@@ -26,9 +25,9 @@ a, button {
   height: 145px;
   margin-left: 3.3%;
   margin-top: 3%;
-  
 }
-.site_top {  /*LOGIN, JOIN */
+/*LOGIN, JOIN */
+.site_top {  
   text-align: right;
 }
  #JOIN {  
@@ -37,95 +36,76 @@ a, button {
 .site_top a {
   font-size: 30px;
   color: #ff80ab;
-  padding: 0 45px 0 11px; 
+  padding: 0 45px 0 12px; 
   margin-top: 8%;
   display: inline-block; 
   font-weight: 900;
+  margin-right: 20px;
 } 
 #menu_button { 
-float: right;
-margin-right: 1%;
-border: none; 
-/* vertical-align: middle; */
-text-indent: -9999em; 
-background: url(img/menu.png) no-repeat ;
-width: 100px;
-height: 100px; 
-margin-top: 8%;
+  float: right;
+  margin-right: 1%;
+  border: none; 
+  text-indent: -9999em; 
+  background: url(img/menu.png) no-repeat  ;
+  background-size: 60%;
+  width: 100px;
+  height: 100px; 
+  margin-top: 7%;
 }
-
 /* 배너 시작 */
-
 .banner img {
   width: 100%;
   height:100%;
-  margin-top: 2%;
+  margin-top: 3%;
 }
-
-.event img { /*BR로 시작하는 글자 이미지 class*/
+/*BR EVENT*/
+.BR img { /*BR: br로 시작하는 글자 이미지 class*/
   width: 21%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 6%;
 }
-.event {
-  margin-bottom: 7%;  /* br event와 사진사이 간격*/
-}
-.store { /* br store 아래 이미지들 */
-  display: block ;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  margin-bottom: 10px;
-}
 .tit { 
   float: left;
-  width: calc(100% / 2 - 10px);
+  width: calc(100% /2 - 2%);
   padding: 1%;
-  margin-left: 0;
-  border-radius: 30%;
+  border-radius: 15%;
 }
- .tit img { /*이미지 끝 둥글게 */
+ .tit img { 
   border-radius: 3%; 
 } 
-.title {  /* 문구 */
-font-size: 35px;
-color: #424242;
-font-weight: lighter ;
+.title {  
+  font-size: 35px;
+  color: #424242;
+  font-weight: lighter ;
 }
 .period {
   font-size: 25px;
   font-weight: lighter ;
   color: #757575;
 }
-/* BR MENU 시작 */
+/*BR MENU*/
+.BR {
+  margin-bottom: 7%;  
+}
+/* br store */
+.store { 
+  display: block ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #eaeaea;
+} 
+
+/* BR MENU  */
 .long_menu {
   background-color: #eeeeee;
+  margin-top: 10%;
 }
-#br_menu {
-  margin-top: 20px;
-}
-
-
-
-.left {
-  float: left;
-}
-
-.br_event1  img{
-float: left;
-width: 45%;
-margin-left: 1px;
-}
-.br_event2 img {
-  float: right;
-  width: 45%;
-  margin-left: 1px;
-}
-.title {
-  letter-spacing: -1.08px;
-}
+/* happy order & delivery*/
 .happy_order {
   display: block;
   margin-left: auto;
@@ -134,15 +114,7 @@ margin-left: 1px;
   margin-bottom: 10%;
   width: 60%;
 }
-#br_store {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-  margin-bottom: 5%;
-  
-}
-
+/* sns */
 .sns {
   display: block;
   margin-left: auto;
@@ -155,11 +127,11 @@ margin-left: 1px;
   width: 20%;
   padding: 0 ;
   margin:0;
-  
 }
-.sns_list  img {
+.sns_list img {
   width: 60%;
 }
+/*baskinrobbins instagram*/
 .insta {
   display: block;
   margin-left: auto;
@@ -174,11 +146,10 @@ margin-left: 1px;
   margin-right: auto;
   margin-top: 5%;
 }
-
+/* 더보기+ */
  .button {
   border-radius: 42px;
   color: black;
-  cursor: pointer;
   padding: 3%;
   width: 45%;
   margin-top: 3%;
@@ -187,6 +158,7 @@ margin-left: 1px;
   font-size: 35px;
   font-weight: 900;
 } 
+/* footer */
 .footer_2 a{
   font-size: 30px;
   color: #757575;
@@ -194,7 +166,6 @@ margin-left: 1px;
 .footer_2 li {
   float:left;
   padding: 5px;
-  
 }
  #pink {
   color: #ff80ab;
@@ -203,24 +174,19 @@ margin-left: 1px;
 /* 해피포인트 ..~~ */
 #footer .brand_family li {
   float: left;
-  width: 16.666%;
+  width: 16%; 
   box-sizing: border-box;
-  margin-left:-1px;
   z-index: 1;
-  padding: 2%;
+  padding: 1%;
 }
 #footer .brand_family .brand img {
-  width: 100%;
+  width: 90%;
   height: 60%;
 }
 #footer .brand {
-  
   float: left; 
   padding: 1%;
-  
 }
-
-
 #footer .brand_family li a {
   display: block;
   width: 110%;
@@ -230,7 +196,6 @@ margin-left: 1px;
   color: #726456;
   font-size: 20px;
   text-align: center;
-  box-sizing: border-box;
   letter-spacing: -.08em;
   line-height: 1.1;
   border-radius: 15%;
@@ -240,7 +205,6 @@ margin-left: 1px;
 #footer .tel img{
   width:5%;
   margin-left: 20px;
-  
 }
 #footer .tel a {
   font-size: 30px;
@@ -252,7 +216,7 @@ margin-left: 1px;
   color: white;
   cursor: pointer;
   padding: 2%;
-  width: 19%;
+  width: 20%;
   margin-top: 3%;
   background-color:#c8baa9;
   border-color: #bfbfbf;
@@ -266,11 +230,8 @@ select {
  margin-top: 4%;
  color:#c8baa9 ;
  width: 24%;
- /* height:25%; */
  font-size: 25px;
  padding: 1%;
- 
- 
 }
 .last_footer {
  margin-top: 4%;
